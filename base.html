@@ -1,25 +1,41 @@
 {% extends "project_base.html" %}
 
-{% block header_action %}
-  <a class="header-action" href="#selector">Подобрать метод</a>
-{% endblock %}
-
-{% block title %}Сравнение | Навигатор сбережений{% endblock %}
+{% block title %}Главная и продукты | Навигатор сбережений{% endblock %}
 
 {% block content %}
-  <section class="compare-tab" id="compare">
-    <p class="eyebrow">Сравнение</p>
-    <h1>Сравнение способов сбережения</h1>
-    <p>Базовая заготовка вкладки для сравнения вкладов, накопительных счетов и инвестиций.</p>
+  <section class="home-tab" id="home">
+    <p class="eyebrow">Финансовая грамотность</p>
+    <h1>Навигатор по сбережениям</h1>
+    <p>Стартовая страница с кратким объяснением проекта и переходом к финансовым продуктам.</p>
+
+    <nav class="home-links" aria-label="Основные разделы">
+      <a href="#products">Продукты</a>
+      <a href="#deposits">Вклады</a>
+      <a href="#savings">Накопительные счета</a>
+      <a href="#investments">Инвестиции</a>
+    </nav>
   </section>
 
-  <section class="compare-criteria" id="criteria">
-    <h2>Критерии сравнения</h2>
-    <p>Здесь позже появится таблица по риску, сроку, доступу к деньгам и доходности.</p>
-  </section>
+  <section class="products-tab" id="products">
+    <p class="eyebrow">Продукты</p>
+    <h2>Финансовые продукты для сравнения</h2>
+    <p>Базовая заготовка страницы продуктов: вклад, накопительный счет и инвестиционные сервисы.</p>
 
-  <section class="compare-selector" id="selector">
-    <h2>Подобрать метод</h2>
-    <p>Здесь позже появится анкета, которая помогает выбрать подходящий продукт.</p>
+    <div class="product-groups">
+      <article id="deposits">
+        <h3>Вклады</h3>
+        <p>Здесь позже появятся карточки банковских вкладов и расчет дохода.</p>
+      </article>
+
+      <article id="savings">
+        <h3>Накопительные счета</h3>
+        <p>Здесь позже появятся карточки счетов и расчет примерной доходности.</p>
+      </article>
+
+      <article id="investments">
+        <h3>Инвестиции</h3>
+        <p>Здесь позже появятся полезные ссылки на инвестиционные сервисы.</p>
+      </article>D
+    </div>
   </section>
 {% endblock %}
