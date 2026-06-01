@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Навигатор сбережений{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="{{ url_for('index') }}">Навигатор сбережений</a>
+
+      <nav class="nav" aria-label="Основная навигация">
+        <a href="{{ url_for('index') }}">Главная</a>
+        <a href="{{ url_for('products') }}">Продукты</a>
+        <a href="{{ url_for('compare') }}">Сравнение</a>
+        <a href="{{ url_for('learn') }}">Обучение</a>
+      </nav>
+
+      {% block header_action %}{% endblock %}
+    </header>
+
+    <main>
+      {% block content %}
+        <section class="learn-tab" id="learn">
+          <p class="eyebrow">Обучение</p>
+          <h1>Материалы для самостоятельного изучения</h1>
+          <p>Базовая заготовка вкладки обучения: позже здесь появятся уроки и мини-тесты.</p>
+        </section>
+      {% endblock %}
+    </main>
+
+    <footer class="footer footer--credits">
+      <p>Разработка информационного сайта для повышения грамотности в области финансовых сбережений - Галева А.Р., Микрюкова Р.Р., Чудина А.А. 2026г</p>
+    </footer>
+  </body>
+</html>
