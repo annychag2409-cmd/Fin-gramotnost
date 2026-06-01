@@ -1,0 +1,44 @@
+<section class="scenario-matrix" data-scenario-matrix>
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">Сценарии</p>
+      <h2>Выбор продукта по ситуации</h2>
+    </div>
+    <p>Матрица показывает, какой инструмент изучить первым: вклад, накопительный счет или инвестиции.</p>
+  </div>
+
+  <form class="scenario-matrix__form">
+    <label>
+      Главная цель
+      <select name="goal">
+        <option value="reserve">Финансовая подушка</option>
+        <option value="purchase">Покупка в известный срок</option>
+        <option value="capital">Долгосрочный рост капитала</option>
+      </select>
+    </label>
+
+    <label>
+      Когда понадобятся деньги
+      <select name="term">
+        <option value="anytime">В любой момент</option>
+        <option value="year">В течение года</option>
+        <option value="long">Через несколько лет</option>
+      </select>
+    </label>
+
+    <label>
+      Готовность к риску
+      <select name="risk">
+        <option value="low">Не хочу рисковать суммой</option>
+        <option value="medium">Готов к изменению ставки</option>
+        <option value="high">Готов к рыночным колебаниям</option>
+      </select>
+    </label>
+
+    <button class="button button--primary" type="submit">Показать рекомендацию</button>
+  </form>
+
+  <div class="scenario-matrix__result" data-scenario-result aria-live="polite">
+    <span>Рекомендация появится после выбора параметров.</span>
+  </div>
+</section>
