@@ -1,0 +1,58 @@
+.lesson-notes {
+  display: grid;
+  gap: 14px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.lesson-notes__head {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.lesson-notes label {
+  display: grid;
+  gap: 8px;
+  color: #52615f;
+  font-size: 14px;
+}
+
+.lesson-notes input[type="text"],
+.lesson-notes textarea {
+  width: 100%;
+  min-height: 46px;
+  padding: 11px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--text);
+}
+
+.lesson-notes textarea {
+  resize: vertical;
+  line-height: 1.45;
+}
+
+.lesson-notes__check {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  align-items: start;
+}
+
+.lesson-notes__check input {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--green);
+}
+
+.lesson-notes__status {
+  margin: 0;
+  color: var(--green-deep);
+  font-size: 14px;
+  line-height: 1.45;
+}
