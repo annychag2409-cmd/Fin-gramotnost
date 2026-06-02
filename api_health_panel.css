@@ -1,0 +1,60 @@
+.api-health-panel {
+  display: grid;
+  gap: 18px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.api-health-panel__head {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: end;
+}
+
+.api-health-panel__head h2 {
+  font-size: 30px;
+}
+
+.api-health-panel__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.api-health-card {
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f8fbfa;
+}
+
+.api-health-card strong,
+.api-health-card span {
+  display: block;
+}
+
+.api-health-card span {
+  margin-top: 8px;
+  color: var(--muted);
+}
+
+.api-health-card--bad {
+  border-color: rgba(154, 90, 90, 0.35);
+  background: #fff8f8;
+}
+
+@media (max-width: 980px) {
+  .api-health-panel__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .api-health-panel__grid {
+    grid-template-columns: 1fr;
+  }
+}
