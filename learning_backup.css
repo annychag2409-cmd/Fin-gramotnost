@@ -1,0 +1,27 @@
+.learning-backup-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.learning-backup-panel h2 {
+  font-size: 30px;
+}
+
+.learning-backup-panel p:last-child {
+  margin: 10px 0 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .learning-backup-panel {
+    grid-template-columns: 1fr;
+  }
+}
