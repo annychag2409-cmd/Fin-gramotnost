@@ -1,0 +1,45 @@
+
+<section class="product-filter-panel" data-product-filter-panel>
+  <div class="product-filter-panel__head">
+    <div>
+      <p class="eyebrow">Подбор продуктов</p>
+      <h2>Фильтр вкладов и счетов</h2>
+    </div>
+    <button class="button button--ghost" type="button" data-product-filter-reset>Сбросить</button>
+  </div>
+
+  <form class="product-filter-form" aria-label="Фильтры банковских продуктов">
+    <label>
+      Поиск по банку или названию
+      <input type="search" name="query" placeholder="Например, Сбер или накопительный">
+    </label>
+
+    <label>
+      Тип продукта
+      <select name="productType">
+        <option value="all">Все продукты</option>
+        <option value="deposit">Вклады</option>
+        <option value="savings">Накопительные счета</option>
+      </select>
+    </label>
+
+    <label>
+      Минимальная ставка, %
+      <input type="number" name="minRate" min="0" max="50" step="0.1" value="0">
+    </label>
+
+    <label>
+      Сортировка
+      <select name="sortBy">
+        <option value="rate_desc">Сначала высокая ставка</option>
+        <option value="amount_asc">Сначала низкая сумма</option>
+        <option value="bank_asc">По банку А-Я</option>
+      </select>
+    </label>
+  </form>
+
+  <div class="product-filter-panel__summary" aria-live="polite">
+    <span data-product-filter-count>0 продуктов</span>
+    <span data-product-filter-favorites>0 в избранном</span>
+  </div>
+</section>
