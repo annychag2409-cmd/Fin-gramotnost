@@ -1,0 +1,24 @@
+
+.field-error {
+  display: block;
+  margin-top: 6px;
+  color: var(--danger);
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+input[aria-invalid="true"],
+select[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+  border-color: rgba(154, 90, 90, 0.7);
+  background: #fff8f8;
+}
+
+.release5-alert {
+  padding: 14px 16px;
+  border: 1px solid rgba(154, 90, 90, 0.32);
+  border-radius: 8px;
+  background: #fff1f1;
+  color: var(--danger);
+  line-height: 1.45;
+}
