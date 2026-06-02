@@ -1,0 +1,41 @@
+.final-compare-summary {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 360px;
+  gap: 24px;
+  align-items: start;
+  padding: 28px;
+  border-radius: 8px;
+  background: #2d4f61;
+  color: #fff;
+}
+
+.final-compare-summary .eyebrow {
+  color: #b6e0c9;
+}
+
+.final-compare-summary p {
+  color: #d9ecf5;
+  line-height: 1.6;
+}
+
+.final-compare-summary__steps {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding-left: 22px;
+  color: #f2f8fb;
+  line-height: 1.45;
+}
+
+.final-compare-summary__steps li {
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 980px) {
+  .final-compare-summary {
+    grid-template-columns: 1fr;
+  }
+}
