@@ -1,0 +1,29 @@
+.final-learning-summary {
+  padding: 72px 0;
+}
+
+.final-learning-summary__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.final-learning-summary__grid article {
+  min-height: 180px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.final-learning-summary__grid p {
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+@media (max-width: 980px) {
+  .final-learning-summary__grid {
+    grid-template-columns: 1fr;
+  }
+}
